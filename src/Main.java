@@ -60,16 +60,23 @@ public class Main {
         numbers6[1] = 2;
         numbers6[2] = 3;
         for (int index = numbers6.length - 1; index >= 0; index--) {
-            System.out.print(numbers6[index]);
-            if (index < numbers6.length - 1) {
-                System.out.println(numbers6[index] + ", ");
+            if (index == 0) {
+                System.out.print(numbers6[index]);
                 break;
             }
-            System.out.print(numbers6[index] + " ");
+            System.out.print(numbers6[index] + ", ");
         }
 
+        System.out.println();
+
+
         System.out.println("Задача 4");
-        int [] arr = {1, 2, 3};
+        int[] arr = {1, 2, 3, 4, 5};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0){
+                arr[i] += 1;
+            }
+        }
         System.out.println(Arrays.toString(arr));
 
     }
